@@ -17,10 +17,10 @@ if (Lower % 2 == 0) {
     for (let a = Lower ; a <= Upper ; a += 2) {
         Answer = a + Answer
     }
-    console.log("\n" + Answer + ".\n")
+    console.log("\n" + Answer.toLocaleString("en") + ".\n")
 } else {
     for(let a = Lower + 1 ; a <= Upper ; a += 2) {
         Answer = a + Answer
     }
-    console.log("\n" + Answer + ".\n")
+    console.log("\n" + Answer.toLocaleString("en") + ".\n")
 }
