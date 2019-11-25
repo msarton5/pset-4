@@ -11,12 +11,15 @@ while (height < 1 || height > 24 || Number.isNaN(height)) {
   height = Number(readlineSync.question("Height: "));
 }
 
+let output = "";
+console.log();
 for (let i = 0; i < height; i++) {
   for (let j = 0; j < height - 1 - i; j++) {
-    console.log(" ");
+    output += " ";
   }
   for (let k = 0; k < i + 2; k++) {
-      console.log("#");
+      output += "#";
   }
-  console.log()
+  output += "\n";
 }
+console.log(output);
